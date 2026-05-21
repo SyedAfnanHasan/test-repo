@@ -8,14 +8,14 @@ def prod_integers(
         num1: int,
         num2: int
         ) -> int:
-    """_summary_
+    """This is the main function
 
     Args:
-        num1 (dict[str, int]): _description_
-        num2 (list[int]): _description_
+        num1 (dict[str, int]): old_sum
+        num2 (list[int]): new_sum
 
     Returns:
-        int: _description_
+        int: the new total inventory
     """
 
     x: int = num1 + num2

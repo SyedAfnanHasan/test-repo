@@ -1,5 +1,30 @@
-def prod_integers(num1, num2):
-    return num1 * num2
+"""Simple math function"""
+
+import double_it    # first awy to import
+# from double_it import double_it
 
 
-print(prod_integers(1, 2))
+def prod_integers(
+        num1: int,
+        num2: int
+        ) -> int:
+    """This is the main function
+
+    Args:
+        num1 (dict[str, int]): old_sum
+        num2 (list[int]): new_sum
+
+    Returns:
+        int: the new total inventory
+    """
+
+    x: int = num1 + num2
+
+    result = double_it.double_int(x)
+
+    return result
+
+
+if __name__ == "__main__":
+    print("inside main.py Dunder")
+    print(prod_integers(1, 2))
